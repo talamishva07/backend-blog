@@ -13,3 +13,6 @@ app.listen(5000, () => {
 });
 
 app.use('/api', require('./api/crudapi'));
+app.use('/',(req,res)=>{
+    res.send(" <h1>Backend started</h1>");
+})
